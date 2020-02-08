@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currículum Vitae</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        background: url(https://i.imgur.com/sK4s0U9.png) no-repeat;
+        background-color: #f5f5f5;
+        background-size: 100%;
+        text-align: center;
+        color: #212121;
+      }
+      .datper {
+        background-color: #f5f5f5;
+        width: 75%;
+        box-shadow: 0 0 10px #00000070;
+        margin: 11%;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+      }
+
+      .datper .imagen {
+        order: 1;
+        align-self: flex-start;
+        width: 75em;
+      }
+      .datper .texto {
+        padding-left: 3em;
+        order: 2;
+        text-align: left;
+        width: 104em;
+        padding-top: 5em;
+      }
+      .datper .texto p i {
+        padding-right: 0.5em;
+        color: #ee696b;
+      }
+      .datper .texto .data {
+        padding-top: 0.5em;
+      }
+      .nombre {
+        font-size: xx-large;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+      }
+      .titulo {
+        font-size: xx-large;
+        font-weight: 500;
+      }
+      .irr {
+        color: #616161;
+      }
+      .histoaca {
+        margin-bottom: 10em;
+      }
+      .histoaca .histdata {
+        padding-top: 0.5em;
+      }
+      .herrprog {
+        background-color: #523a78;
+        background-image: linear-gradient(316deg, #523a78 0%, #ee696b 74%);
+        padding-top: 5em;
+        padding-bottom: 5em;
+        color: #f5f5f5;
+        width: auto;
+      }
+      .herrprog .herrdata {
+        padding-top: 0.5em;
+      }
+      hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: 0px;
+        border-top: 2px solid #f5f5f5;
+        padding: 0;
+        width: 43%;
+      }
+      .upsXD {
+        border-top: 2px solid #00000070;
+      }
+      /*responsive XD*/
+      @media only screen and (min-width: 701px) and (max-width: 1244px) {
+        .datper {
+          flex-direction: column;
+        }
+        .datper .imagen {
+          align-self: center;
+          width: 60%;
+        }
+        .datper .texto {
+          padding-top: 0em;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .datper {
+          flex-direction: row;
+        }
+        .datper .texto {
+          order: 1;
+          padding-left: 1em;
+          padding-top: 0em;
+          width: inherit;
+        }
+        .datper .imagen {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="datper">
+      <img class="imagen" src="https://i.imgur.com/GrFHz7M.jpg" alt="yo" />
+      <div class="texto">
+        <h1 class="nombre">Jessica J. Grajeda</h1>
+        <p class="irr">Estudiante de Ing. en Sistemas Computacionales</p>
+        <div class="data">
+          <p><i class="fas fa-exclamation"></i> 17100229</p>
+          <p><i class="far fa-calendar"></i> 28 de febrero del 1999</p>
+          <p><i class="fab fa-github"></i> github.com/arvafik</p>
+          <p><i class="fas fa-at"></i> jessejgrajeda@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="histoaca">
+      <h1 class="titulo">Historial Académico</h1>
+      <hr class="upsXD" />
+      <div class="histdata">
+        <p>Educación Superior: 2017 - Presente</p>
+        <p class="irr">
+          Actualmente estudiando la carrera de Ingeniería en Sistemas
+          Computacionales en el Instituto Tecnológico de Nuevo Laredo
+        </p>
+        <p>Educación Medio Superior: 2014 - 2017</p>
+        <p class="irr">
+          Capacitación en Informática en el Colegio de Bachilleres del Estado de
+          Tamaulipas Plantel 01
+        </p>
+        <p>Educación Secundaria: 2011 - 2014</p>
+        <p class="irr">
+          Secundaria general número 6, taller de taquimecanografía
+        </p>
+      </div>
+    </section>
+
+    <section class="herrprog">
+      <h1 class="titulo">Experiencia en programación</h1>
+      <hr />
+      <div class="herrdata">
+        <p>
+          Diseñadora y administradora de contenidos del Sistema de Tutorías
+          (Instituto Tecnológico de Nuevo Laredo)
+        </p>
+        <p>
+          Lenguajes de programación: C#, Java, Ruby, Javascript, Typescript
+          (Lenguajes de scripting)
+        </p>
+        <p>Bases de datos: SQL Server y MySQL</p>
+        <p>
+          Experiencia utilizando HTML, CSS/Sass, Angular, Ruby on Rails, Xamarin
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
